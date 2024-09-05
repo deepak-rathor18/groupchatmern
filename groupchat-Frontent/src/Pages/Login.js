@@ -12,7 +12,7 @@ const Login = () => {
     const submitForm = () => {
 
         console.log(userLogin);
-        axios.post("http://localhost:3000/login", {
+        axios.post("https://groupchatmern1.vercel.app/login", {
             email: userLogin.email,
             password: userLogin.password
         }).then((res) => {
