@@ -9,7 +9,7 @@ const Chatlist = (props) => {
     
   
     const apiCall = () => {
-        axios.get("http://localhost:3000/message/getMessage").then((res) => {
+        axios.get("https://groupchatmern1.vercel.app/message/getMessage").then((res) => {
             console.log(res);
             setMessages(res.data.message)
             apiCall()
